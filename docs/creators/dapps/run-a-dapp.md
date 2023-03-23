@@ -52,8 +52,8 @@ source ~/.envs/dapps/bin/activate
     On Windows in the regular `cmd` shell, you need to replace the above with:
     
     ```
-    python -m venv --clear %HOMEDRIVE%%HOMEPATH%\.envs\dapps
-    %HOMEDRIVE%%HOMEPATH%\.envs\dapps\Scripts\activate.bat
+    python -m venv --clear %USERPROFILE%\.envs\dapps
+    %USERPROFILE%\.envs\dapps\Scripts\activate.bat
     ```
 
 ### Install `dapp-runner`
@@ -65,6 +65,23 @@ pip install -U pip dapp-runner
 ```
 
 ## Running a dApp on Golem
+
+### Create and switch to a directory for the sample app
+```shell
+cd $HOME
+mkdir todo-dapp
+cd todo-dapp
+```
+
+!!! warning
+
+    On Windows in the regular `cmd` shell, you need to replace the above with:
+    
+    ```
+    cd %USERPROFILE%
+    mkdir todo-dapp
+    cd todo-dapp
+    ```
 
 ### Get the sample app
 
